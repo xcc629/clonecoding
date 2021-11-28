@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@500&family=Noto+Serif+KR&display=swap" rel="stylesheet">    
+<title>Momentum App</title>
+</head>
+<body>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <div id="clock-login-parent">
+        <div id="clock-parent">
+            <h2 id="clock">00:00:00</h2>
+        </div>
+        <div id="login-parent">
+            <form id="login-form" class="hidden">
+                <h2>
+                    What is your name?
+                </h2>
+                <input required maxlength ="15" type="text" />
+                <input type="submit" value="Log In"/>
+            </form>
+            <h1 id="greeting" class="hidden"></h1>
+        </div> 
+    </div>
+    <div id="quote-parent">
+        <div id="quote">
+            <span></span>
+            <br>
+            <span></span>
+        </div>
+    </div>   
+
+    <div id="todo-parent" class="hidden">
+        <span><form id="todo-form" class="hidden">
+            <input type="text" placeholder="오늘의 to-do는? 엔터를 누르면 할 일에 추가됩니다!" required>
+        </form></span>
+        <br>
+        <span class="hidden">
+            <ul id="todo-list" class="hidden"></ul>
+        </span>
+    </div>
+
+    <div id="done-container">
+        <div id="done-parent" class="hidden">
+            <span>
+                <form id="all-remove-dones">
+                    <span>오늘 한 일!</span>
+                    <input type="button" value="모두 삭제">
+                </form>
+            </span>
+            <span id="ul-parent-span">
+                <ul id="done-list"></ul>
+            </span>
+        
+        </div>
+    </div>
+
+
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quatoes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+    <script src="js/donedelete.js"></script>
+</body>
+</html>
